@@ -1,0 +1,16 @@
+<form [formGroup]="studentForm" class="add-border">
+  <div>
+    <label>Student Name</label>
+    <input type="text" formControlName="name" />
+  </div>
+  <div>
+    <label>Student No</label>
+    <input type="number" formControlName="no" />
+  </div>
+  <div>
+    <label>Student Phone</label>
+    <input type="text" formControlName="phone" />
+  </div>
+
+  <button class="submit-btn" (click)="onSubmit()">submit</button>
+</form>

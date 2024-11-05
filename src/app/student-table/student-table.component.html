@@ -1,0 +1,14 @@
+<table>
+  <thead>
+  <th>student name</th>
+  <th>student no</th>
+  <th>student phone no</th>
+  <th>action</th>
+  </thead>
+  <tr *ngFor="let student of studentList">
+    <td>{{student.name}}</td>
+    <td>{{student.no}}</td>
+    <td>{{student.phone}}</td>
+    <button (click)="onDelete(student)">Delete</button>
+  </tr>
+</table>
